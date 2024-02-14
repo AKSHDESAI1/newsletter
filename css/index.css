@@ -42,7 +42,7 @@ body {
 
   display: flex;
   position: relative;
-  top: 40px;
+  top: 0px;
   left: 10px;
 }
 
@@ -60,7 +60,7 @@ body {
 
 .sub-heading {
   text-align: start;
-  margin: 25px 0 0 62px;
+  margin: 23px 0 0 62px;
   color: var(--Charcoal_Grey);
   font-size: 16px;
   font-weight: 400, 700;
@@ -110,12 +110,14 @@ body {
   margin-top: 8px;
   width: 98%;
   color: var(--Dark_Slate_Grey);
-  padding: 15px 20px;
+  padding: 15px 0px 15px 22px;
   border-radius: 10px;
   height: 55px;
   font-size: 16px;
   cursor: pointer;
   border: 1px solid var(--Grey);
+  /* font-family: lighter;
+  font-weight: 400, 700; */
 }
 
 .emailField button {
@@ -125,7 +127,7 @@ body {
   border-radius: 5px;
   width: 98%;
   font-weight: bold;
-  margin-top: 26px;
+  margin-top: 25px;
   cursor: pointer;
   height: 55px;
   font-size: 15px;
@@ -139,8 +141,7 @@ body {
 
 .right {
   flex-basis: 46%;
-  background: url("/newsletter/assets/images/illustration-sign-up-desktop.svg")
-    no-repeat;
+  background: url("/newsletter/assets/images/illustration-sign-up-desktop.svg") no-repeat;
   margin: 22px;
   border-radius: 20px;
   background-size: cover;
