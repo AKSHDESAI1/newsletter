@@ -1,0 +1,148 @@
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark_Slate_Grey: hsl(234, 29%, 20%);
+  --Charcoal_Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Charcoal_Grey);
+  font-family: regular;
+}
+
+@font-face {
+  font-family: bold;
+  src: url("/newsletter/assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: regular;
+  src: url("/newsletter/assets/fonts/Roboto-Regular.ttf");
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 925px;
+  height: 640px;
+  background: var(--White);
+  border-radius: 30px;
+
+  display: flex;
+  position: relative;
+  top: 40px;
+  left: 10px;
+}
+
+.left {
+  flex-basis: 55%;
+}
+
+.heading {
+  font-size: 56px;
+  margin: 90px auto 0 -10px;
+  text-align: center;
+  color: var(--Dark_Slate_Grey);
+  font-family: bold;
+}
+
+.sub-heading {
+  text-align: start;
+  margin: 25px 0 0 62px;
+  color: var(--Charcoal_Grey);
+  font-size: 16px;
+  font-weight: 400, 700;
+}
+
+.sub-heading p {
+  margin-top: 2px;
+}
+
+.functionallity {
+  color: var(--Charcoal_Grey);
+}
+
+.functionallity ul {
+  margin: 30px 0px auto 63px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.functionallity ul li {
+  list-style-image: url("/newsletter/assets/images/icon-list.svg");
+  font-size: 16px;
+  margin-bottom: 14px;
+  list-style: none;
+  display: flex;
+  font-family: regular;
+  font-weight: 400, 700;
+}
+
+.functionallity ul li img {
+  margin-right: 14px;
+}
+
+.emailField {
+  margin: 25px 35px 0px 63px;
+  font-family: regular;
+}
+
+.emailField label {
+  color: var(--Dark_Slate_Grey);
+  font-size: 12px;
+  font-family: bold;
+}
+
+.emailField input {
+  margin-top: 8px;
+  width: 98%;
+  color: var(--Dark_Slate_Grey);
+  padding: 15px 20px;
+  border-radius: 10px;
+  height: 55px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid var(--Grey);
+}
+
+.emailField button {
+  background: var(--Dark_Slate_Grey);
+  color: var(--White);
+  padding: 15px 1px;
+  border-radius: 5px;
+  width: 98%;
+  font-weight: bold;
+  margin-top: 26px;
+  cursor: pointer;
+  height: 55px;
+  font-size: 15px;
+  /* transition: all 3s linear; */
+}
+
+.emailField button:hover {
+  background: linear-gradient(to right, pink, orange);
+  box-shadow: 0px 0px 10px white;
+}
+
+.right {
+  flex-basis: 46%;
+  background: url("/newsletter/assets/images/illustration-sign-up-desktop.svg")
+    no-repeat;
+  margin: 22px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: right;
+}
